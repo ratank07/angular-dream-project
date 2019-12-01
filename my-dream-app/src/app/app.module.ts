@@ -10,6 +10,7 @@ import { HomeComponent } from './user/home/home.component';
 import { ShowComponent } from './user/show/show.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { Router, ActivatedRoute } from "@angular/router";
+import { LoginComponent } from './login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { Router, ActivatedRoute } from "@angular/router";
     EditComponent,
     HomeComponent,
     ShowComponent,
-    NavbarComponent
+    NavbarComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

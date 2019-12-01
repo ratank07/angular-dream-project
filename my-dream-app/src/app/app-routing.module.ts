@@ -4,9 +4,11 @@ import { HomeComponent } from './user/home/home.component';
 import { AddComponent } from './user/add/add.component';
 import { EditComponent } from './user/edit/edit.component';
 import { ShowComponent } from './user/show/show.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'/home',pathMatch:'full'},
+  {path:'login', component: LoginComponent},
   {path:'home', component: HomeComponent},
   {path:'adduser', component:AddComponent},
   {path:'edit/:id', component:EditComponent},

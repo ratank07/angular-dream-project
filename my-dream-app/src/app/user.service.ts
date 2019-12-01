@@ -6,7 +6,7 @@ import { stringify } from 'querystring';
 import { User } from "./user";
 @Injectable({
   providedIn: 'root'
-})
+}) 
 export class UserService {
   user = new User()
 
@@ -26,5 +26,8 @@ export class UserService {
   }
   deleteUser(id){
     return this.http.delete('http://localhost:3000/userroute/?id='+id+'')
+  }
+  UserLogin(user){
+    return this.http.post('http://localhost:3000/userroute/login',user)
   }
 }
